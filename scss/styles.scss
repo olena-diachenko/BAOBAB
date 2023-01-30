@@ -1,0 +1,14 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #252B42;
+    color: #fff;
+    letter-spacing: 0.2px;
+}
+
+.container {
+    max-width: 1092px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+@import "header";
