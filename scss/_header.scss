@@ -16,9 +16,10 @@
         font-weight: 700;
         font-size: 24px;
         letter-spacing: 0.1px;
+        transition: color 0.25s ease 0s;
         
         &:hover {
-            opacity: 0.8;
+            color: #252B42;
         }
     }
 
@@ -40,11 +41,38 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 1.7;
+        position: relative;
+        transition: color 0.25s ease 0s;
+
+        &:hover {
+            color: #252B42;
+        }
+
+        &::after {
+            content: "";
+            background: #252B42;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            transform: scaleX(0);
+            transition: transform 0.25s ease;
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+        }
     }
 
     &__search {
         width: 16px;
         height: 16px;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.5);
+            }
     }
 
     &__burger-icon {
