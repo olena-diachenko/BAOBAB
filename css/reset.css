@@ -30,7 +30,7 @@ figure {
   margin: 0;
 }
 
-input::-moz-focus-inner {
+input {
   border: 0;
   padding: 0;
   margin: 0;

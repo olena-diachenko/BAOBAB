@@ -1,0 +1,63 @@
+.practice {
+    padding: 125px 0 102px;
+
+    &__title-wrap {
+        margin: 0 auto;
+        max-width: 512px;
+    }
+
+    .title-section {
+        text-align: center;
+        max-width: 512px;
+    
+        &__title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 1.4;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+    
+        &__subtitle {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    }
+
+    &__cards-wrap {
+        margin-top: 44px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 33px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 240px;
+        background: #fff;
+    }
+    
+    &__card-content {
+        padding: 28px 30px 30px;
+    }
+
+    &__card-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.1px;
+        color: #252B42;
+        margin-bottom: 16px;
+    }
+
+    &__card-subtitle {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.4;
+        color: #737373;
+    }
+
+}
