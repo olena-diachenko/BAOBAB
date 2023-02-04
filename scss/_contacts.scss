@@ -28,7 +28,9 @@
     &__cards-wrap {
         margin-top: 80px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 320px);
+        justify-content: center;
+        
     }
 
     &__card {
@@ -107,9 +109,19 @@
         font-size: 14px;
         color: #FFA62B;
 
+        &:hover {
+            color: #fff;
+            background-color: #FFA62B;
+        }
+
         &_light {
             border: 1px solid #fff;
             color: #fff;
+
+            &:hover {
+                color: #00A0C1;
+                background-color: #fff;
+            }
         }
     }
 }
