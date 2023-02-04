@@ -1,6 +1,11 @@
 .clients {
     &__wrap {
         padding: 50px 0;
+
+        .slick-track {
+            display: flex;
+            align-items: center;
+        }
     }
 
     &__client-logo {
@@ -34,8 +39,9 @@
         justify-content: space-between;
         align-items: center;
         background: #F9F9F9;
-        border: 1px solid #E6E6E6;
+        border: none;
         border-radius: 5px;
+        
     }
 
     &__input {
@@ -43,6 +49,8 @@
         height: 100%;
         padding: 15px 20px;
         outline: none;
+        order: 1px solid #E6E6E6;
+        border-radius: 5px;
 
         &::placeholder {
             font-size: 14px;
@@ -55,15 +63,14 @@
         background: #FFA62B;
         border-radius: 0px 5px 5px 0px;
         font-size: 14px;
-        line-height: 2;
-        text-align: center;
-        padding: 15px 0;
         width: 26%;
         height: 100%;
+        transition: all 0.2s ease;
 
         &:hover {
-            border: 2px solid #E6E6E6;
-            
+            border: 2px solid #FFA62B;
+            background: #16697A;
+            color: #FFA62B;
         }
     }
 }

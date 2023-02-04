@@ -1,5 +1,5 @@
 $('.clients__wrap').slick({
-  centerMode: true,
+  // centerMode: true,
   arrows: false,
   centerPadding: '0',
   slidesToShow: 6,
@@ -9,7 +9,7 @@ $('.clients__wrap').slick({
       settings: {
         dots: true,
         arrows: false,
-        centerMode: true,
+        // centerMode: true,
         centerPadding: '15px',
         slidesToShow: 3
       }
@@ -19,7 +19,7 @@ $('.clients__wrap').slick({
       settings: {
         dots: true,
         arrows: false,
-        centerMode: true,
+        // centerMode: true,
         centerPadding: '15px',
         slidesToShow: 1
       }
