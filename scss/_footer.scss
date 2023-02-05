@@ -1,3 +1,5 @@
+@import "colors";
+
 .footer {
     &__top {
         display: flex;
@@ -21,21 +23,21 @@
     &__btn {
         width: 160px;
         height: 60px;
-        background: #FFA62B;
+        background: $accent-color;
         border-radius: 5px;
         font-weight: 700;
         font-size: 14px;
         transition: all 0.2s ease;
 
         &:hover {
-            border: 2px solid #FFA62B;
+            border: 2px solid $accent-color;
             background: inherit;
-            color: #FFA62B;
+            color: $accent-text-color;
         }
     }
 
     &__main-wrap {
-        background: #16697A;
+        background: $dark-cyan-color;
     }
 
     &__main {

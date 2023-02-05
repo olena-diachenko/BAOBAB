@@ -1,3 +1,5 @@
+@import "colors";
+
 .header {
     min-height: 924px;
 
@@ -27,9 +29,8 @@
         transition: fill .25s ease 0s;
 
         &:hover {
-            fill: #00a0c1;
+            fill: $cyan-color;
         }
-
     }
 
     &__nav {
@@ -55,7 +56,7 @@
 
         &::after {
             content: "";
-            background: #00a0c1;
+            background: $cyan-color;
             height: 2px;
             width: 100%;
             position: absolute;
@@ -66,7 +67,7 @@
         }
 
         &:hover {
-            color: #00a0c1;
+            color: $cyan-text-color;
         }
 
         &:hover::after {
@@ -91,7 +92,6 @@
     &__main {
         width: 100%;
         padding: 80px 0 102px;
-        // здесь нужно будет поменять нижний
     }
 
     &__heading-section {
@@ -131,25 +131,25 @@
 
     &__btn {
         width: 185px;
-        background: #ffa62b;
+        background: $accent-color;
         margin-right: 10px;
 
         &:hover {
-            border: 2px solid #ffa62b;
+            border: 2px solid $accent-color;
             background: none;
-            color: #ffa62b;
+            color: $accent-text-color;
         }
 
         &:disabled {
-            background: #bdbdbd;
+            background: $disabled-color;
         }
     }
 
     &__btn-link {
-        border: 2px solid #fff;
+        border: 2px solid $light-background-color;
 
         &:hover {
-            border: 2px solid #ffa62b;
+            border: 2px solid $accent-color;
         }
     }
 
@@ -161,10 +161,10 @@
 
     &__card {
         padding: 32px;
-        background: #fff;
+        background: $light-background-color;
 
         &_light {
-            background: #00A0C1;
+            background: $cyan-color;
         }
     }
 
@@ -176,11 +176,11 @@
         font-size: 24px;
         line-height: 1.3;
         letter-spacing: 0.1px;
-        color: #252B42;
+        color: $text-color;
         margin-bottom: 12px;
 
         &_light {
-            color: #fff;
+            color: $light-text-color;
         }
     }
 
@@ -188,10 +188,10 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 1.4;
-        color: #737373;
+        color: $second-text-color;
 
         &_light {
-            color: #fff;
+            color: $light-text-color;
         }
     }
 }

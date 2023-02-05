@@ -1,3 +1,5 @@
+@import "colors";
+
 .practice {
     padding: 0 0 80px;
 
@@ -36,7 +38,7 @@
         flex-direction: column;
         justify-content: space-between;
         max-width: 240px;
-        background: #fff;
+        background: $light-background-color;
     }
     
     &__card-content {
@@ -47,7 +49,7 @@
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.1px;
-        color: #252B42;
+        color: $text-color;
         margin-bottom: 16px;
     }
 
@@ -55,6 +57,6 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 1.4;
-        color: #737373;
+        color: $second-text-color;
     }
 }

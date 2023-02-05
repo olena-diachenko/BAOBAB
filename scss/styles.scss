@@ -1,7 +1,9 @@
+@import "colors";
+
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #252B42;
-    color: #fff;
+    background-color: $dark-background-color;
+    color: $light-text-color;
     letter-spacing: 0.2px;
 }
 

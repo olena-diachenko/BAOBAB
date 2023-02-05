@@ -1,3 +1,5 @@
+@import "colors";
+
 .clients {
     padding: 0 0 80px;
 
@@ -23,7 +25,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: #16697A;
+        background: $dark-cyan-color;
         border-radius: 2px;
         padding: 30px 50px;
     }
@@ -40,36 +42,34 @@
         width: 50%;
         height: 58px;
         display: flex;
-        background: #F9F9F9;
+        background: $light-input-color;
         border-radius: 5px;
-        
     }
 
     &__input {
         width: 74%;
         padding: 15px 20px;
         outline: none;
-        order: 1px solid #E6E6E6;
         border-radius: 5px;
+        background: $light-input-color;
 
         &::placeholder {
             font-size: 14px;
             line-height: 2;
         }
-
     }
 
     &__btn {
-        background: #FFA62B;
+        background: $accent-color;
         border-radius: 0px 5px 5px 0px;
         font-size: 14px;
         width: 26%;
         transition: all 0.2s ease;
 
         &:hover {
-            border: 2px solid #FFA62B;
-            background: #16697A;
-            color: #FFA62B;
+            border: 2px solid $accent-color;
+            background: $dark-cyan-color;
+            color: $accent-text-color;
         }
     }
 }
