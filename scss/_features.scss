@@ -27,7 +27,7 @@
     }
 
     &__cards-wrap {
-        margin-top: 44px;
+        margin-top: 48px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 33px;
@@ -65,12 +65,10 @@
     }
 
     @media screen and (max-width: $breakpoint_md) {
-        // padding: 0 0;
+        padding: 0 0 64px;
 
         &__cards-wrap {
-            margin-top: 50px;
             grid-template-columns: repeat(2, 1fr);
-            gap: 32px;
         }
     }
 }

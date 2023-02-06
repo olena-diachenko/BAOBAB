@@ -38,7 +38,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        max-width: 240px;
         background: $light-background-color;
     }
     
@@ -59,5 +58,17 @@
         font-size: 14px;
         line-height: 1.4;
         color: $second-text-color;
+    }
+
+    &__card-img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: $breakpoint_md) {
+        padding: 0 0 64px;
+
+        &__cards-wrap {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }
