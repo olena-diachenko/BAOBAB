@@ -120,19 +120,14 @@
         display: flex;
     }
 
-    &__btn,
-    &__btn-link {
-        padding: 10px 36px;
+    &__btn {
+        width: 185px;
+        height: 48px;
         border-radius: 37px;
+        background: $accent-color;
         font-weight: 700;
         font-size: 14px;
         line-height: 2;
-
-    }
-
-    &__btn {
-        width: 185px;
-        background: $accent-color;
         margin-right: 10px;
 
         &:hover {
@@ -143,11 +138,20 @@
 
         &:disabled {
             background: $disabled-color;
-        }
+        }      
     }
 
     &__btn-link {
+        display: block;
+        width: 154px;
+        height: 48px;
         border: 2px solid $light-background-color;
+        border-radius: 37px;
+        padding: 10px 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
 
         &:hover {
             border: 2px solid $accent-color;
@@ -193,6 +197,109 @@
 
         &_light {
             color: $light-text-color;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint_md) {
+        min-height: 1300px;
+
+        &__inner {
+            background-position: center left;
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__search {
+            display: none;
+        }
+
+        &__burger-icon {
+            display: block;
+            width: 31px;
+            height: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: end;
+            
+            &::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 3px;
+                background: $light-background-color;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                width: 50%;
+                height: 3px;
+                background: $light-background-color;
+            }
+        }
+
+        &__burger-icon-inner {
+            display: block;
+            width: 75%;
+            height: 3px;
+            background: $light-background-color;
+        }
+
+        &__main {
+            padding: 75px 0 0;
+        }
+
+        &__heading-section {
+            margin-bottom: 36px;
+        }
+
+        &__heading {
+            max-width: 346px;
+            font-weight: 700;
+            font-size: 40px;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        &__text {
+            max-width: 290px;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        &__btn-wrap {
+            flex-direction: column;
+            min-height: 120px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__btn {
+            margin-right: 0;
+        }
+
+        &__cards-wrap {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            max-width: 512px;
+            margin: 0 auto;
+        }
+
+        &__card {
+            padding: 37px 40px 35px;
+        }
+
+        &__card-icon {
+            margin-bottom: 10px;
+        }
+
+        &__card-title {
+            margin-bottom: 10px;
         }
     }
 }

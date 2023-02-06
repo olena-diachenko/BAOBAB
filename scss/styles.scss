@@ -12,6 +12,14 @@ body {
     max-width: 1092px;
     margin: 0 auto;
     padding: 0 16px;
+
+    @media screen and (max-width: $breakpoint_md) {
+        max-width: 752px;
+    }
+
+    @media screen and (max-width: $breakpoint_sm) {
+        max-width: 398px;
+    }
 }
 
 @import "header";
