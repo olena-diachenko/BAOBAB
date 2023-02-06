@@ -3,10 +3,16 @@
 
 .header {
     min-height: 924px;
+    position: relative;
 
-    &__inner {
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 793px;
         background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/header/main_img.png");
-        max-height: 793px;
         background-repeat: no-repeat;
         background-position: center right;
         background-size: cover;
@@ -95,7 +101,7 @@
         padding: 80px 0 102px;
     }
 
-    &__heading-section {
+    &__heading-wrap {
         margin-bottom: 80px;
     }
 
@@ -203,7 +209,7 @@
     @media screen and (max-width: $breakpoint_md) {
         min-height: 1300px;
 
-        &__inner {
+        &__background {
             background-position: center left;
         }
 
@@ -249,10 +255,10 @@
         }
 
         &__main {
-            padding: 75px 0 0;
+            padding: 75px 0 64px;
         }
 
-        &__heading-section {
+        &__heading-wrap {
             margin-bottom: 36px;
         }
 

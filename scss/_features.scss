@@ -63,4 +63,14 @@
         letter-spacing: 0.1px;
         color: $second-text-color;
     }
+
+    @media screen and (max-width: $breakpoint_md) {
+        // padding: 0 0;
+
+        &__cards-wrap {
+            margin-top: 50px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+    }
 }
