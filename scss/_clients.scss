@@ -5,7 +5,7 @@
     padding: 0 0 80px;
 
     &__wrap {
-        margin-bottom: 63px;
+        margin-bottom: 60px;
 
         .slick-track {
             display: flex;
@@ -17,54 +17,54 @@
         text-align: center;
     }
 
-    &__subscription-wrap {
-        max-width: 986px;
-        margin: 0 auto;
-    }
 
-    &__subscription {
+    &__form {
+        max-width: 986px;
+        height: 124px;
+        background: $dark-cyan-color;
+        border-radius: 2px;
+        margin: 0 auto;
+        padding: 30px 50px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: $dark-cyan-color;
-        border-radius: 2px;
-        padding: 30px 50px;
     }
 
-    &__subscription-title {
-        max-width: 260px;
+    &__form-title {
+        max-width: 258px;
         font-size: 24px;
         line-height: 1.3;
         letter-spacing: 0.1px;
         text-transform: capitalize;
     }
 
-    &__form {
+    &__input-wrap {
         width: 50%;
         height: 58px;
-        display: flex;
         background: $light-input-color;
         border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
     }
 
     &__input {
-        width: 74%;
-        padding: 15px 20px;
+        width: 100%;
         outline: none;
         border-radius: 5px;
+        padding: 15px 20px;
         background: $light-input-color;
-
-        &::placeholder {
-            font-size: 14px;
-            line-height: 2;
-        }
+        
+            &::placeholder {
+                font-size: 14px;
+                line-height: 2;
+            }
     }
 
     &__btn {
+        width: 117px;
         background: $accent-color;
         border-radius: 0px 5px 5px 0px;
         font-size: 14px;
-        width: 26%;
         transition: all 0.2s ease;
 
         &:hover {
@@ -74,6 +74,20 @@
         }
     }
 
-    @media screen and (max-width: $breakpoint_md) Х
-        
+    @media screen and (max-width: $breakpoint_md) {
+        padding: 0 0 60px;
+
+        .slick-dots li button::before {
+            font-size: 25px;
+            color: #fff;
+        }
+
+        &__subscription-wrap {
+            max-width: 720px;
+        }
+
+        &__subscription {
+            padding: 30px 16px;
+        }
+    }
 }

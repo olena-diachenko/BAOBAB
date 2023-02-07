@@ -2,6 +2,7 @@
 @import "breakpoints";
 
 .footer {
+
     &__top {
         display: flex;
         justify-content: space-between;
@@ -13,6 +14,7 @@
         line-height: 1.3;
         letter-spacing: 0.1px;
         margin-bottom: 10px;
+        text-transform: capitalize;
     }
 
     &__top-subtitle {
@@ -47,12 +49,7 @@
     }
 
     &__col {
-        flex: 1 0 0;
-
-        
-        &_double {
-            flex: 2 0 0;
-        }
+        min-width: 148px;
 
         &:not(:last-of-type) {
             margin-right: 30px;
@@ -110,7 +107,7 @@
     }
 
     &__bottom {
-        padding: 25px 0;
+        padding: 24px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -146,5 +143,32 @@
 
     &__youtube-link {
         height: 18px;
+    }
+
+    @media screen and (max-width: $breakpoint_md) {
+        &__top {
+            max-width: 512px;
+            margin: 0 auto;
+            padding: 47px 0;
+            align-items: center;
+        }
+
+        &__main {
+            padding: 36px 0;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__col {
+            width: auto;
+
+            &:last-child {
+                margin: 40px auto 0;
+            }
+
+            &:not(:last-of-type) {
+                margin-right: 0;
+            }
+        }
     }
 }

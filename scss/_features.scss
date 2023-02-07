@@ -68,6 +68,8 @@
         padding: 0 0 64px;
 
         &__cards-wrap {
+            max-width: 512px;
+            margin: 48px auto 0;
             grid-template-columns: repeat(2, 1fr);
         }
     }
