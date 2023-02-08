@@ -29,21 +29,20 @@
 
     &__cards-wrap {
         margin-top: 80px;
-        display: grid;
-        grid-template-columns: repeat(3, 320px);
+        display: flex;
         justify-content: center;
+        align-items: center;
         text-align: center;
     }
 
     &__card {
-        align-items: center;
+        min-height: 360px;
         background: $light-background-color;
         padding: 64px 50px;
 
-        &_light {
+        &_accent {
             background: $cyan-color;
-            height: 110%;
-            align-self: center;
+            min-height: 392px;
             padding: 80px 50px;
         }
     }
@@ -82,7 +81,7 @@
         line-height: 1.7;
         color: $text-color;
 
-        &_light {
+        &_accent {
             color: $light-text-color;
         }
     }
@@ -94,7 +93,7 @@
         color: $text-color;
         margin-bottom: 15px;
 
-        &_light {
+        &_accent {
             color: $light-text-color;
         }
     }
@@ -114,7 +113,7 @@
             background-color: $accent-color;
         }
 
-        &_light {
+        &_accent {
             border: 2px solid $light-background-color;
             color: $light-text-color;
 
@@ -130,16 +129,16 @@
 
         &__cards-wrap {
             margin-top: 40px;
-            grid-template-columns: repeat(1, 512px);
-            gap: 30px;
+            flex-direction: column;
         }
 
         &__card {
+            width: 512px;
+            min-height: 330px;
             padding: 50px;
 
-            &_light {
-                height: auto;
-                padding: 80px 50px;
+            &:not(:last-child) {
+                margin-bottom: 30px;
             }
         }
     }
@@ -148,14 +147,9 @@
         &__title-wrap {
             max-width: 245px;
         }
-
-        &__cards-wrap {
-            grid-template-columns: 1fr;
-        }
         
         &__card {
             max-width: 330px;
-            margin: 0 auto;
         }
     }
 }

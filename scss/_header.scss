@@ -160,7 +160,7 @@
         padding: 32px;
         background: $light-background-color;
 
-        &_light {
+        &_accent {
             background: $cyan-color;
         }
     }
@@ -176,7 +176,7 @@
         color: $text-color;
         margin-bottom: 12px;
 
-        &_light {
+        &_accent {
             color: $light-text-color;
         }
     }
@@ -187,7 +187,7 @@
         line-height: 1.4;
         color: $second-text-color;
 
-        &_light {
+        &_accent {
             color: $light-text-color;
         }
     }

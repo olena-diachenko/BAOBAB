@@ -81,32 +81,18 @@
         }
 
         &__form {
+            max-width: 720px;
             padding: 30px 16px;
         }
     }
 
      @media screen and (max-width: $breakpoint_sm) {
-        padding: 0 0 272px;
-        position: relative;
+        padding: 0 0 60px;
 
         &__form {
-            position: absolute;
-            top: 139px;
-            left: 0;
-            width: 100%;
+            max-width: 100%;
             flex-direction: column;
             text-align: center;
-
-            // &::after {
-            //     content: "";
-            //     position: absolute;
-            //     top: 139px;
-            //     left: 0;
-            //     z-index: -1;
-            //     width: 100%;
-            //     min-height: 212px;
-            //     background: $dark-cyan-color;
-            // }
         }
 
         &__form-title {
