@@ -17,10 +17,8 @@
         text-align: center;
     }
 
-
     &__form {
         max-width: 986px;
-        height: 124px;
         background: $dark-cyan-color;
         border-radius: 2px;
         margin: 0 auto;
@@ -82,12 +80,46 @@
             color: #fff;
         }
 
-        &__subscription-wrap {
-            max-width: 720px;
-        }
-
-        &__subscription {
+        &__form {
             padding: 30px 16px;
         }
     }
+
+     @media screen and (max-width: $breakpoint_sm) {
+        padding: 0 0 272px;
+        position: relative;
+
+        &__form {
+            position: absolute;
+            top: 139px;
+            left: 0;
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+
+            // &::after {
+            //     content: "";
+            //     position: absolute;
+            //     top: 139px;
+            //     left: 0;
+            //     z-index: -1;
+            //     width: 100%;
+            //     min-height: 212px;
+            //     background: $dark-cyan-color;
+            // }
+        }
+
+        &__form-title {
+            margin-bottom: 30px;
+        }
+
+        &__input-wrap {
+            width: 80%;
+            height: 58px;
+            background: $light-input-color;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+     }
 }

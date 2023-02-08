@@ -143,4 +143,19 @@
             }
         }
     }
+
+    @media screen and (max-width: $breakpoint_sm) {
+        &__title-wrap {
+            max-width: 245px;
+        }
+
+        &__cards-wrap {
+            grid-template-columns: 1fr;
+        }
+        
+        &__card {
+            max-width: 330px;
+            margin: 0 auto;
+        }
+    }
 }

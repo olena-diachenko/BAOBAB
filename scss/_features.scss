@@ -73,4 +73,17 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
+
+    @media screen and (max-width: $breakpoint_sm) {
+
+        &__title-wrap {
+            max-width: 245px;
+        }
+
+        &__cards-wrap {
+            max-width: 330px;
+            grid-template-columns: repeat(1, 230px);
+            justify-content: center;
+        }
+    }
 }

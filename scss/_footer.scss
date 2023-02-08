@@ -171,4 +171,40 @@
             }
         }
     }
+
+    @media screen and (max-width: $breakpoint_sm) {
+        &__top {
+            max-width: 240px;
+            padding: 40px 0;
+            flex-direction: column;
+            align-items: start;
+        }
+
+        &__top-info {
+            margin-bottom: 50px;
+        }
+
+        &__main {
+            max-width: 240px;
+            margin: 0 auto;
+            flex-direction: column;
+        }
+
+        &__col {
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        &__bottom {
+            padding-bottom: 55px;
+            flex-direction: column;
+        }
+
+        &__copyright {
+            margin-bottom: 50px;
+        }
+    }
 }

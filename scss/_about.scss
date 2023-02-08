@@ -102,4 +102,15 @@
             margin-bottom: 10px;
         }
     }
+
+    @media screen and (max-width: $breakpoint_sm) {
+
+        &__title-wrap {
+            max-width: 245px;
+        }
+
+        &__video {
+            max-width: 330px;
+        }
+    }
 }

@@ -42,7 +42,7 @@
     }
     
     &__card-content {
-        padding: 28px 30px 30px;
+        padding: 30px;
     }
 
     &__card-title {
@@ -71,6 +71,20 @@
             max-width: 512px;
             margin: 44px auto 0;
             grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (max-width: $breakpoint_sm) {
+
+        &__title-wrap {
+            max-width: 245px;
+        }
+
+        &__cards-wrap {
+            max-width: 330px;
+            grid-template-columns: repeat(1, 230px);
+            gap: 30px;
+            justify-content: center;
         }
     }
 }
