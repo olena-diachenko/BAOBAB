@@ -23,3 +23,19 @@ $('.clients__wrap').slick({
     }
   ]
 });
+
+// Burger
+
+// let burger = document.querySelector("#burger-icon");
+// let header = document.querySelector("#header");
+// burger.onclick = function () {
+//   header.classList.toggle("menu-open");
+// };
+
+// Burger
+
+$(document).ready(function () {
+  $('.header__burger').click(function (event) {
+    $('.header__burger,.header__nav,.header__burger-inner').toggleClass('open');
+  });
+})
