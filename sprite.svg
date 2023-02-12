@@ -17,7 +17,6 @@
     <symbol id="search" viewBox="0 0 17 16">
         <g>
             <path
-                fill="#fff"
                 fill-rule="evenodd"
                 d="m11.94 10.318 4.304 4.303a.807.807 0 0 1-1.142 1.14L10.8 11.459a6.4 6.4 0 1 1 1.14-1.14h.001Zm-5.06.88a4.8 4.8 0 1 0 0-9.6 4.8 4.8 0 0 0 0 9.6Z"
                 clip-rule="evenodd"

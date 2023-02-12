@@ -1,3 +1,21 @@
+// Burger
+
+$(document).ready(function () {
+  $('.header__burger').click(function (event) {
+    $('.header__burger,.header__nav,.header__burger-inner').toggleClass('open');
+  });
+})
+
+// Search
+
+$(document).ready(function () {
+  $('.header__search,.header__input').click(function (event) {
+    $('.header__search,.header__input').toggleClass('active');
+  });
+})
+
+// Slider
+
 $('.clients__wrap').slick({
   arrows: false,
   centerPadding: '0',
@@ -23,19 +41,3 @@ $('.clients__wrap').slick({
     }
   ]
 });
-
-// Burger
-
-// let burger = document.querySelector("#burger-icon");
-// let header = document.querySelector("#header");
-// burger.onclick = function () {
-//   header.classList.toggle("menu-open");
-// };
-
-// Burger
-
-$(document).ready(function () {
-  $('.header__burger').click(function (event) {
-    $('.header__burger,.header__nav,.header__burger-inner').toggleClass('open');
-  });
-})
