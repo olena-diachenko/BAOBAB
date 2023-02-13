@@ -66,7 +66,7 @@
               </svg>
               <input
                 class="header__input"
-                type="text"
+                type="search"
                 placeholder="What are you looking for?"
               />
             </a>
@@ -282,9 +282,24 @@
             </div>
           </div>
           <div class="about__content">
-            <video class="about__video" controls src="./video/main-video.mp4">
-              Sorry, your browser doesn't support embedded videos.
-            </video>
+            <div class="video-section">
+              <div class="position-relative">
+                <video
+                  class="about__video"
+                  controls
+                  src="./video/main-video.mp4"
+                >
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+                <span class="play-btn">
+                  <i class="fas fa-play">
+                    <svg width="25" height="30" viewBox="0 0 25 30" fill="none">
+                      <use xlink:href="./sprite.svg#about__play-btn"></use>
+                    </svg>
+                  </i>
+                </span>
+              </div>
+            </div>
             <div class="about__box">
               <div class="about__box-title-wrap">
                 <h3 class="about__box-title">Most trusted in our field</h3>

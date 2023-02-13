@@ -117,6 +117,15 @@
         </g>
     </symbol>
 
+    <symbol id="about__play-btn">
+        <g>
+            <path
+                d="M0.300781 0.300049L24.3008 14.7001L0.300781 29.1001V0.300049Z"
+                fill="white"
+                />
+        </g>
+    </symbol>
+
     <symbol id="about__first-icon">
         <g>
          <path

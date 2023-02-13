@@ -261,6 +261,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             margin-right: 0;
+            text-align: center;
         }
 
         &__item:not(:last-of-type) {
@@ -278,11 +279,6 @@
             position: absolute;
             top: 90%;
             left: 50%;
-            transition: transform 0.3s ease-in-out;
-
-            &:hover {
-                transform: scale(1);
-            }
         }
 
         &__search-icon {
@@ -295,7 +291,7 @@
             top: -400%;
             right: 50%;
             margin-right: -150px;
-            font-size: 24px;
+            font-size: 22px;
 
             &.active {
                 width: 300px;
@@ -422,7 +418,7 @@
 
         &__input {
             margin-right: -130px;
-            font-size: 20px;
+            font-size: 18px;
 
             &.active {
                 width: 260px;

@@ -62,10 +62,10 @@
         padding: 15px 20px;
         background: $light-input-color;
         
-            &::placeholder {
-                font-size: 14px;
-                line-height: 2;
-            }
+        &::placeholder {
+            font-size: 14px;
+            line-height: 2;
+        }
     }
 
     &__btn {
