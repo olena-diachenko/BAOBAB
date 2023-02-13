@@ -165,6 +165,42 @@
         height: 18px;
     }
 
+    &__facebook-icon {
+        fill: #335BF5;
+        transition: fill 0.3s ease;
+
+        &:hover {
+            fill: $light-background-color;
+        }
+    }
+
+    &__instagram-icon {
+        fill: #E61F5A;
+        transition: fill 0.3s ease;
+
+        &:hover {
+            fill: $light-background-color;
+        }
+    }
+
+    &__twitter-icon {
+        fill: #21A6DF;
+        transition: fill 0.3s ease;
+
+        &:hover {
+            fill: $light-background-color;
+        }
+    }
+
+    &__youtube-icon {
+        fill: #E42F08;
+        transition: fill 0.3s ease;
+
+        &:hover {
+            fill: $light-background-color;
+        }
+    }
+
     @media screen and (max-width: $breakpoint_md) {
         &__top {
             max-width: 512px;

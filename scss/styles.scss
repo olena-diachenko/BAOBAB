@@ -1,6 +1,10 @@
 @import "colors";
 @import "breakpoints";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: $dark-background-color;

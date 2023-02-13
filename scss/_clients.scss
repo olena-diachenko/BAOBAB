@@ -14,7 +14,17 @@
     }
 
     &__client-logo {
+        display: block;
         text-align: center;
+    }
+
+    &__client {
+        fill: $inactive-color;
+        transition: fill 0.3s ease;
+
+        &:hover {
+            fill: $dark-cyan-color;
+        }
     }
 
     &__form {
