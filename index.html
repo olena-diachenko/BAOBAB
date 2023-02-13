@@ -472,6 +472,40 @@
           </div>
         </div>
       </section>
+      <div id="modal" class="modal">
+        <div class="modal__content">
+          <span class="close">&times;</span>
+          <h2 class="modal__title">Our specialists will be in touch!</h2>
+          <form class="modal__form" action="#">
+            <label for="name" class="modal__label">Name</label>
+            <input
+              class="modal__input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="John Smith"
+              required
+            />
+            <label for="email" class="modal__label">Email</label>
+            <input
+              class="modal__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="JohnSmith@email.com"
+              required
+            />
+            <label for="comment" class="modal__label">Comments</label>
+            <textarea
+              class="modal__comment"
+              name="comment"
+              id="comment"
+              placeholder="Please tell us what you’re interested in..."
+            ></textarea>
+            <button class="modal__btn" type="submit">Send Request</button>
+          </form>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="container">

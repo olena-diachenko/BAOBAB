@@ -146,7 +146,7 @@
         font-size: 14px;
         line-height: 2;
         margin-right: 10px;
-        transition: all 0.1s ease 0s;
+        transition: all 0.2s ease 0s;
 
         &:hover {
             border: 2px solid $accent-color;
@@ -170,7 +170,7 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 1.5;
-        transition: border 0.1s ease 0s;
+        transition: border 0.2s ease 0s;
 
         &:hover {
             border: 2px solid $accent-color;
