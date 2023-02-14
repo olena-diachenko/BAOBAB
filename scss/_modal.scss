@@ -22,14 +22,11 @@
         color: #000;
     }
 
-    & .close {
-        display: none;
-    }
-
     &__title {
         font-size: 32px;
         line-height: 1.2;
         margin-bottom: 32px;
+        text-align: center;
     }
 
     &__form {
@@ -94,10 +91,6 @@
         &__content {
             max-width: 512px;
             padding: 24px 30px;
-        }
-
-        &__title {
-            text-align: center;
         }
     }
 

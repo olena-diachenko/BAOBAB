@@ -107,7 +107,6 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (t) {
 
 var modal = document.getElementById("modal");
 var btn = document.getElementsByClassName("contacts__card-btn");
-// var span = document.getElementsByClassName("close")[0];
 btn[0].onclick = function() {
   modal.style.display = "block";
 }
@@ -117,11 +116,6 @@ btn[1].onclick = function () {
 btn[2].onclick = function () {
   modal.style.display = "block";
 }
-
-// When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
