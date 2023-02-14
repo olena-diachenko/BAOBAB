@@ -1,11 +1,3 @@
-// Burger
-
-$(document).ready(function () {
-  $('.header__burger').click(function (event) {
-    $('.header__burger,.header__nav,.header__burger-inner').toggleClass('open');
-  });
-})
-
 // Search
 
 $(document).ready(function () {
@@ -14,6 +6,13 @@ $(document).ready(function () {
   });
 })
 
+// Burger
+
+$(document).ready(function () {
+  $('.header__burger').click(function (event) {
+    $('.header__burger,.header__nav,.header__burger-inner').toggleClass('open');
+  });
+})
 
 // Video
 
@@ -89,7 +88,7 @@ $('.clients__wrap').slick({
   ]
 });
 
-// Scroll-behavior for Safari
+// Scroll-behavior
 
 $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (t) {
     if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
@@ -108,7 +107,7 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (t) {
 
 var modal = document.getElementById("modal");
 var btn = document.getElementsByClassName("contacts__card-btn");
-var span = document.getElementsByClassName("close")[0];
+// var span = document.getElementsByClassName("close")[0];
 btn[0].onclick = function() {
   modal.style.display = "block";
 }
@@ -120,9 +119,9 @@ btn[2].onclick = function () {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
