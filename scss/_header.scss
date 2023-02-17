@@ -12,13 +12,10 @@
 
     &__logo-link {
         display: block;
-        height: 36px;
     }
 
     &__logo {
         display: block;
-        width: 200px;
-        height: 100%;
         transition: fill .25s ease 0s;
 
         &:hover {
@@ -234,7 +231,7 @@
 
     @media screen and (max-width: $breakpoint_md) {
 
-        &__logo-wrap {
+        &__logo-link {
             position: relative;
             z-index: 1;
         }
@@ -414,7 +411,6 @@
     }
 
     @media screen and (max-width: $breakpoint_sm) {
-
         &__input {
             margin-right: -130px;
             font-size: 18px;
