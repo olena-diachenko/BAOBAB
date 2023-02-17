@@ -36,13 +36,11 @@
     }
 
     &__card {
-        min-height: 360px;
         background: $light-background-color;
         padding: 64px 50px;
 
         &_accent {
             background: $cyan-color;
-            min-height: 392px;
             padding: 80px 50px;
         }
     }
