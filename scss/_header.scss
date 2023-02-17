@@ -228,7 +228,7 @@
         height: 793px;
         background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/header/main_img.png");
         background-repeat: no-repeat;
-        background-position: center right;
+        background-position: top center;
         background-size: cover;
     }
 
@@ -408,8 +408,8 @@
             margin-bottom: 10px;
         }
 
-         &__background {
-            background-position: center left;
+        &__background {
+            background-position: top right;
         }
     }
 
@@ -434,6 +434,10 @@
 
         &__cards-wrap {
             max-width: 328px;
+        }
+
+        &__background {
+            background-position: top left;
         }
     }
 }
