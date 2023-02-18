@@ -1,14 +1,12 @@
-// Search
-
 $(document).ready(function () {
+  // Search
+
   $('.header__search,.header__input').click(function (event) {
     $('.header__search,.header__input').toggleClass('active');
   });
-})
 
-// Burger
+  // Burger
 
-$(document).ready(function () {
   $('.header__burger').click(function (event) {
     $('.header__burger,.header__nav,.header__burger-inner').toggleClass('open');
   });
