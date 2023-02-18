@@ -2,6 +2,7 @@
 @import "breakpoints";
 
 .header {
+    margin-bottom: 102px;
 
     &__top {
         min-height: 104px;
@@ -105,7 +106,7 @@
     }
 
     &__main {
-        padding: 80px 0 102px;
+        padding: 80px 0 0;
     }
 
     &__heading-wrap {
@@ -229,6 +230,7 @@
     }
 
     @media screen and (max-width: $breakpoint_md) {
+        margin-bottom: 64px;
 
         &__logo-link {
             position: relative;
@@ -351,7 +353,7 @@
         }
 
         &__main {
-            padding: 75px 0 64px;
+            padding: 75px 0 0;
         }
 
         &__heading-wrap {
@@ -420,7 +422,7 @@
         }
 
         &__main {
-            padding: 80px 0 64px;
+            padding: 80px 0 0;
         }
 
         &__heading-wrap {
