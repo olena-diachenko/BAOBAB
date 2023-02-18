@@ -15,41 +15,41 @@
         justify-content: space-between;
     }
 
-    .position-relative {
+    &__video-section {
         position: relative;
-
-        & video {
-            width: 597px;
-            height: 386px;
-            object-fit: cover;
-            }
     }
 
-    .play-btn {
+    &__video {
+        width: 597px;
+        height: 386px;
+        object-fit: cover;
+        }
+
+    &__video-btn {
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
 
-        & i {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: $cyan-color;
-            border-radius: 50%;
-            width: 98px;
-            height: 98px;
-            transition: all 0.3s ease;
+    &__video-icon-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $cyan-color;
+        border-radius: 50%;
+        width: 98px;
+        height: 98px;
+        transition: all 0.3s ease;
 
-            &:hover {
-                width: 94px;
-                height: 94px;
-            }
-
-            & .play-btn-icon {
-                fill: $light-background-color;
-            }
+        &:hover {
+            width: 94px;
+            height: 94px;
         }
+    }
+
+     &__video-play-btn {
+        fill: $light-background-color;
     }
 
     &__box {
@@ -75,7 +75,7 @@
     &__card {
         display: flex;
 
-        &:first-of-type {
+        &:first-child {
             margin-bottom: 30px;
         }
     }
@@ -106,16 +106,14 @@
             align-items: center;
         }
 
-        .video-section {
+        &__video-section {
             margin: 0 0 48px;
         }
 
-        .position-relative {
-            & video {
+        &__video {
                 width: 512px;
                 height: auto;
             }
-        }
 
         &__box-title {
             margin-bottom: 10px;
@@ -128,10 +126,8 @@
             max-width: 245px;
         }
 
-        .position-relative {
-            & video {
-                width: 330px;
-            }
+        &__video {
+            width: 330px;
         }
     }
 }

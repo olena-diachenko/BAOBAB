@@ -18,12 +18,12 @@ $(document).ready(function () {
 
 jQuery(function($) {
   //play video btn
-  $(".position-relative video").removeAttr("controls"); //hide controls by default
+  $(".about__video-section video").removeAttr("controls"); //hide controls by default
   //on clicking play button
-  $(".video-section").each(function() {
-    $(".play-btn").click(function() {
+  $(".about__video-section").each(function() {
+    $(".about__video-btn").click(function() {
       var video = $(this)
-        .closest(".position-relative")
+        .closest(".about__video-section")
         .find("video")
         .get(0);
       video.play();
@@ -40,7 +40,7 @@ jQuery(function($) {
         video.pause();
         video.controls = false;
         $(this)
-          .siblings(".play-btn")
+          .siblings(".about__video-btn")
           .css("visibility", "visible");
         return false;
       });
@@ -51,7 +51,7 @@ jQuery(function($) {
       .on("ended", function() {
         $(this).get(0).controls = false;
         $(this)
-          .siblings(".play-btn")
+          .siblings(".about__video-btn")
           .css("visibility", "visible");
         $(this)
           .get(0)
