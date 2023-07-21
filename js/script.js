@@ -103,8 +103,8 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (t) {
 
 // Modal
 
-var modal = document.getElementById("modal");
-var btn = document.getElementsByClassName("contacts__card-btn");
+const modal = document.getElementById("modal");
+const btn = document.getElementsByClassName("contacts__card-btn");
 btn[0].onclick = function() {
   modal.style.display = "block";
 }
@@ -116,7 +116,7 @@ btn[2].onclick = function () {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-let eventsArray = ["click","touchstart", "touchend"];
+const eventsArray = ["click","touchstart", "touchend"];
 
 eventsArray.forEach( function(event) { 
     window.addEventListener(event, function(e) {
